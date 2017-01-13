@@ -19,6 +19,14 @@ class TddPythonExample(unittest.TestCase):
         """Test that raises ValueError when Strings are passed in."""
         self.assertRaises(ValueError, self.calc.add, 'two', 'three')
 
+    def test_calculator_returns_error_message_if_x_arg_not_number(self):
+        """Test that raises ValueError when x arg isn't a number."""
+        self.assertRaises(ValueError, self.calc.add, 'two', 3)
+
+    def test_calculator_returns_error_message_if_y_arg_not_number(self):
+        """Test that raises ValueError when y arg isn't a number."""
+        self.assertRaises(ValueError, self.calc.add, 2, 'three')
+
 
 if __name__ == '__main__':
     unittest.main()
