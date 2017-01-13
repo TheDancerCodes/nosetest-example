@@ -1,0 +1,10 @@
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+app/__pycache__/
+app/*.py[cod]
+app/*$py.class
+
+test/__pycache__/
+test/*.py[cod]
+test/*$py.class
